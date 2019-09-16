@@ -5,5 +5,6 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <!--<include file="changelog/file-name-example.xml" relativeToChangelogFile="true"/>-->
+    <include file="changelog/16.09.2019_01_init-user-and-role-tables.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

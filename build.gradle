@@ -29,4 +29,5 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+	compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1.1'
 }

@@ -1,0 +1,34 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="apermyakov">
+        <comment>Init user table</comment>
+        <createTable tableName="user_action" schemaName="public"
+                     remarks="Table for user action entities">
+            <column name="id" type="int4" autoIncrement="true"
+                    remarks="User action id">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true" primaryKeyName="actionId"/>
+            </column>
+            <column name="user_id" type="bigint"
+                    remarks="User id">
+            </column>
+            <column name="request" type="varchar(256)"
+                    remarks="User request">
+            </column>
+            <column name="response_status" type="bigint"
+                    remarks="Response status">
+            </column>
+            <column name="session_id" type="varchar(256)"
+                    remarks="User session id">
+            </column>
+            <column name="action_time" type="timestamp"
+                    remarks="User action time">
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
